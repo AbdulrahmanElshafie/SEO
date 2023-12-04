@@ -14,7 +14,7 @@ All you have to do is:
 At the end of this program, you'll get some analysis of the search results.
 
 
-In this project, I used 'googlesearch' library, a library for searching Google, easily. 
+In this project, I used the 'googlesearch' library, a library for searching Google, easily. 
 
 After taking targeted keywords, we take each focus term and get the top n search results (currently set at 30) (top_n_serp function).
 
@@ -23,7 +23,6 @@ Then locate the targeted keyword in the results then save these results (locate_
 Sometimes you may get an error because too many requests were sent, to solve this issue we make the program sleep for some time and then try again, if this happens over 5 times the program will terminate automatically (rank).
 
 To avoid starting again after this issue, we have a file called 'finished.txt', where we store the successful tries to don't lose our progress (save_results, add_to_finished, read_finished functions).
-
 
 After the results are done you'll get some insights on it, like how many terms you rank in the top 10, 20, 30m, or not indexed and their percentage. Also, you'll have a sheet with each term and your rank for it. 
 
